@@ -1,0 +1,2 @@
+# weekendChallenge
+First AngularJS Project
