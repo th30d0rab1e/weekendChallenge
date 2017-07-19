@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="vendors/angular.js"></script>
+    <script type="text/javascript" src="scripts/client.js"></script>
+    <link rel="stylesheet" href="views/styles.css">
+  </head>
+  <body ng-app="myApp">
+    <h1>Like my Pictures</h1>
+    <div ng-controller="Controller as vm">
+      <p ng-repeat='pictureArray in vm.pictureArray'>
+        <img src="{{pictureArray.imageUrl}}">
+        <button ng-click='vm.like( $index )'>Like Me! {{pictureArray.likes}}</button>
+        {{ pictureArray.description }}
+      </p>
+    </div>
+  </body>
+</html>
